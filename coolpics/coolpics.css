@@ -5,6 +5,34 @@ body {
 
 }
 
+/* close viewer */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-rows: 1 1;
+    align-items: center;
+}
+
+.viewer img {
+    width: 90%;
+    height: 90%;
+    max-height: 100%;
+    padding: 4cap;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.close-viewer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 /* header and nav */
 header {
     background-color: black;
@@ -12,7 +40,12 @@ header {
     text-align: center;
 }
 
-button {
+h1 {
+    padding: 1rem;
+    font-size: 3em;
+}
+
+#menu {
     text-decoration: none;
     border: none;
     background-color: black;
@@ -20,11 +53,11 @@ button {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
+    padding: 10px;
 }
 
-h1 {
-    padding: 1rem;
-    font-size: 3em;
+.hide {
+    display: none;
 }
 
 ul {
@@ -67,17 +100,17 @@ footer {
 /* medium screen */
 @media screen and (min-width: 700px) {
 
-    button {
+    #menu {
         padding: 10px;
+    }
+
+    .hide {
+        display: none;
     }
 
     ul {
         display: flex;
         flex-direction: row;
-    }
-
-    nav {
-        display: none;
     }
 
     .gallery {
@@ -101,6 +134,10 @@ footer {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .viewer img {
+        margin: 100px;
     }
 
     button {
