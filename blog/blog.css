@@ -1,0 +1,45 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    grid-column: 1/4;
+    text-align: center;
+
+    background-color: #faedcd;
+    color: #283618;
+    max-width: 100%;
+    padding: 50px;
+    margin: 0;
+}
+
+nav {
+    grid-column: 1/4;
+    background-color: #283618;
+    
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    list-style-type: none;
+
+    justify-content: end;
+    justify-items: end;
+}
+
+a {
+    color: #faedcd;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+div{
+    padding: 10px;
+}
+
