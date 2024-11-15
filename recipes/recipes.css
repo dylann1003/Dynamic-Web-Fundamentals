@@ -1,0 +1,110 @@
+body {
+    font-family:"Sour Gummy", "san serif";
+}
+
+/* header */
+h1 {
+    font-size: 60px;
+}
+
+#logo_header {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 100px;
+    padding-right: 10px;
+}
+
+/* search bar */
+#search_bar {
+    padding: 20px;
+    border-bottom: solid black 2px;
+    margin: 30px;
+}
+
+#search_bar input {
+    width: 80%;
+    height: 20px;
+}
+
+/* recipe box */
+#recipe_box {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 2px;
+    border-radius: 6px;
+    margin-bottom: 20px;  
+}
+
+#recipe_img {
+    max-width: 90%; /* Ensures the image scales down */
+    height: auto; /* Maintains the aspect ratio */
+    margin: auto; /* Centers the image */
+    margin-top: 5%;
+    display: block; /* Needed to center with margin: auto */
+}
+
+#recipe_writing {
+    padding: 20px;
+}
+
+.recipe_tags {
+    border: solid black 1px;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 3px;
+    display: inline-block;
+}
+
+#recipe_title {
+    font-size: 1.5em;
+    color: #0077b6;
+}
+
+
+/* footer */
+footer {
+    padding: 20px;
+}
+
+footer a {
+    color: #0077b6;
+}
+
+.social img {
+    width: 50px;
+}
+
+/* for screens wider than 600px */
+@media (min-width: 700px) {
+    #recipe_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    #recipe_img {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    
+    
+    footer {
+        display: flex;
+        justify-content: space-between; /* Pushes items to the edges */
+        align-items: center; /* Aligns items vertically */
+    }
+}
+
+
+
+
