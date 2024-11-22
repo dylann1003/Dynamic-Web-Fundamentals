@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 
     <title>Recipebook | Flexbox Practice</title>
 </head>
@@ -29,29 +29,10 @@
     <main>
         <form id="search_bar">
             <input type="text" placeholder="Find a Recipe">
-            <button>Search</button>
+            <button type="submit">Search</button>
         </form>
 
-        <div id="recipe_box">
-            <img id="recipe_img" src="images/sweet-potato-waffle-md.jpg" alt="recipe image">
-            <div id="recipe_writing">
-                <p class="recipe_tags">Waffles</p>
-                <p class="recipe_tags">Sweet Potato</p>
-                <p class="recipe_tags">Side</p>
-                <h2 id="recipe_title">Sweet Potato Waffles</h2>
-            
-
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p id="description">Savory waffles made with Sweet potato with a hint of Ginger</p>
-            </div>
-        </div>
+        <div id="main_box"></div>
 
     </main>
     <footer>
