@@ -1,0 +1,118 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #202020;
+}
+
+/* the header - align links to the right */
+header {
+    height: 60px;
+    background-color: #ffbd59;
+    margin: -8px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 100px;
+}
+
+header a {
+    text-decoration: none;
+    color: #202020;
+    margin: 20px;
+}
+
+#contactbutton:hover {
+    color: #5e83d6;
+}
+
+/* form dropdown */
+form {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+form input {
+    width: 70%;
+    height: 20px;
+}
+
+/* header 1 - store title */
+h1 {
+    margin-left: 50px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+/* main store input */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+main img {
+    max-width: 100%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border-radius: 5px;
+}
+
+#description {
+    margin-top: 15px;
+    padding: 15px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #5e83d6;
+    border-radius: 5px;
+}
+
+#reviews {
+    margin-left: 15px;
+    padding: 30px;
+    grid-row: 1/4;
+    grid-column: 2/3;
+
+    border: solid #5e83d6 4px;
+    border-radius: 5px;
+}
+
+#reviews p {
+    padding-bottom: 15px;
+    border-bottom: solid 2px #5e83d6;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+}
+
+/* for screens bigger than 900px */
+@media (min-width: 900px) {
+    main {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+
+/* for screens smaller than 700px */
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #reviews {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+}

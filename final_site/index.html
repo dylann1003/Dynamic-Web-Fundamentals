@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    <link rel="stylesheet" href="starreview.css">
+    <script type="module" src="starreview.js" defer></script>
+
+    <title>Star Review | Final Project</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="star review logo">
+        </a>
+        <a id="contactbutton" href="contactus.html">Contact Us</a>
+    </header>
+
+    <body>
+        <!-- a form that has a dropdown of all the stores that have reviews -->
+        <form id="dropdown">
+            <select name="stores" id="stores" aria-label="stores around rexburg">
+                <option value="jambajuice">Jamba Juice</option>
+                <option value="tropicalsmoothie">Tropical Smoothie Cafe</option>
+                <option value="dutchbros">Dutch Bros Coffee</option>
+                <option value="pickmeup">Pick Me Up</option>
+            </select>
+        </form>
+
+        <!-- the info that gets changed out -->
+        <main id="storeInfo"></main>
+
+        <footer>
+            <p>@dylann grant 2024</p>
+            <p>WDD-131 final project</p>
+        </footer>
+    </body>
+    
+</body>
+</html>
